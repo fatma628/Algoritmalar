@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="asus"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-08-03 10:24:31 &#214;&#214;"/>
+        <attribute name="created" value="YXN1cztERVNLVE9QLUVETUszQjg7MjAyNC0wOC0wMzswOTo0NDo0MCDDlsOWOzMwNDQ="/>
+        <attribute name="edited" value="YXN1cztERVNLVE9QLUVETUszQjg7MjAyNC0wOC0wMzsxMDoyNDozMSDDlsOWOzI7MzE0Mw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Vize1, Vize2, Final" type="Integer" array="False" size=""/>
+            <output expression="&quot;Vize1 sonucunuzu giriniz. &quot;" newline="True"/>
+            <input variable="vize1"/>
+            <output expression="&quot;Vize2 sonucunuzu giriniz. &quot;" newline="True"/>
+            <input variable="vize2"/>
+            <output expression="&quot;Final sonucunu giriniz. &quot;" newline="True"/>
+            <input variable="final"/>
+            <if expression="(vize1 + vize2) * 0.15 + final * 0.7 &gt;= 50">
+                <then>
+                    <output expression="&quot;Ge&#231;tiniz. &quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Kald&#305;n&#305;z. &quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

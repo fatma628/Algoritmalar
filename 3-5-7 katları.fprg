@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="asus"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-08-03 01:50:32 &#214;S"/>
+        <attribute name="created" value="YXN1cztERVNLVE9QLUVETUszQjg7MjAyNC0wOC0wMzswMToyNTo1MCDDllM7MjkwNQ=="/>
+        <attribute name="edited" value="YXN1cztERVNLVE9QLUVETUszQjg7MjAyNC0wOC0wMzswMTo0MTo1MSDDllM7MTthc3VzO0RFU0tUT1AtRURNSzNCODsyMDI0LTA4LTAzOzEyOjAzOjU1IMOWUzthc2FsIHNhecSxbGFyLmZwcmc7NzkyMQ=="/>
+        <attribute name="edited" value="YXN1cztERVNLVE9QLUVETUszQjg7MjAyNC0wOC0wMzswMTo1MDozMiDDllM7MTszMDEx"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="say&#305;, saya&#231;, kalan, adet" type="Integer" array="False" size=""/>
+            <output expression="&quot;Say&#305; giriniz.&quot;" newline="True"/>
+            <input variable="say&#305;"/>
+            <assign variable="saya&#231;" expression="3"/>
+            <assign variable="adet" expression="0"/>
+            <while expression="saya&#231; &lt; 500">
+                <if expression="saya&#231;%3=0 &amp;&amp; saya&#231;%5=0 &amp;&amp; saya&#231;%7=0">
+                    <then>
+                        <output expression="&quot;Bulunan say&#305; : &quot; &amp; saya&#231;" newline="True"/>
+                    </then>
+                    <else/>
+                </if>
+                <assign variable="saya&#231;" expression="saya&#231;+1"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>

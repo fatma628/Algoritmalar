@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="asus"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-08-03 11:59:55 &#214;&#214;"/>
+        <attribute name="created" value="YXN1cztERVNLVE9QLUVETUszQjg7MjAyNC0wOC0wMzsxMToyODoxNyDDlsOWOzMwNDM="/>
+        <attribute name="edited" value="YXN1cztERVNLVE9QLUVETUszQjg7MjAyNC0wOC0wMzsxMTo1OTo1NSDDlsOWOzE7MzE1Nw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="say&#305;1, say&#305;2, saya&#231;" type="Integer" array="False" size=""/>
+            <output expression="&quot;Bir say&#305; yaz&#305;n&#305;z.&quot;" newline="True"/>
+            <input variable="say&#305;1"/>
+            <output expression="&quot;Ba&#351;ka bir say&#305; daha giriniz.&quot;" newline="True"/>
+            <input variable="say&#305;2"/>
+            <if expression="say&#305;1 &lt; say&#305;2">
+                <then>
+                    <while expression="say&#305;1 &lt; say&#305;2-1">
+                        <assign variable="say&#305;1" expression="say&#305;1 + 1"/>
+                        <output expression="&quot;Say&#305;: &quot; &amp; say&#305;1" newline="True"/>
+                    </while>
+                </then>
+                <else>
+                    <while expression="say&#305;2 &lt; say&#305;1-1">
+                        <assign variable="say&#305;2" expression="say&#305;2 + 1"/>
+                        <output expression="&quot;Say&#305;: &quot; &amp; Say&#305;2" newline="True"/>
+                    </while>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

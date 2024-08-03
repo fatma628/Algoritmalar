@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="asus"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-08-03 11:24:41 &#214;&#214;"/>
+        <attribute name="created" value="YXN1cztERVNLVE9QLUVETUszQjg7MjAyNC0wOC0wMzsxMToxNTo1NyDDlsOWOzMwNDM="/>
+        <attribute name="edited" value="YXN1cztERVNLVE9QLUVETUszQjg7MjAyNC0wOC0wMzsxMToyNDo0MSDDlsOWOzE7MzE0NA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Saya&#231;" type="Integer" array="False" size=""/>
+            <assign variable="Saya&#231;" expression="1"/>
+            <while expression="Saya&#231;&lt;=10">
+                <output expression="&quot;Say&#305;: &quot; &amp; Saya&#231;" newline="True"/>
+                <assign variable="Saya&#231;" expression="Saya&#231; +1"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>

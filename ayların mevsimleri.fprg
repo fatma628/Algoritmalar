@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="asus"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-08-03 11:14:38 &#214;&#214;"/>
+        <attribute name="created" value="YXN1cztERVNLVE9QLUVETUszQjg7MjAyNC0wOC0wMzsxMTowMzoyOCDDlsOWOzMwMzg="/>
+        <attribute name="edited" value="YXN1cztERVNLVE9QLUVETUszQjg7MjAyNC0wOC0wMzsxMToxNDozOCDDlsOWOzE7MzE0OQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Ay" type="Integer" array="False" size=""/>
+            <output expression="&quot;1-12 aras&#305;nda bir say&#305; giriniz.&quot;" newline="True"/>
+            <input variable="Ay"/>
+            <if expression="2&lt;Ay &amp;&amp; Ay&lt;6">
+                <then>
+                    <output expression="&quot;Bu ay bir ilkbahar ay&#305;d&#305;r.&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="5&lt;Ay &amp;&amp; Ay&lt;9">
+                        <then>
+                            <output expression="&quot;Bu ay bir yaz ay&#305;d&#305;r.&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="8&lt;Ay &amp;&amp; Ay&lt;12">
+                                <then>
+                                    <output expression="&quot;Bu ay bir sonbahar ay&#305;d&#305;r.&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <if expression="Ay&gt;12">
+                                        <then>
+                                            <output expression="&quot;Bir y&#305;lda sadece 12 ay bulunur. Bu y&#252;zden l&#252;tfen 1 ve 12 aras&#305;nda bir numara giriniz.&quot;" newline="True"/>
+                                        </then>
+                                        <else>
+                                            <output expression="&quot;Bu ay bir k&#305;&#351; ay&#305;d&#305;r.&quot;" newline="True"/>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

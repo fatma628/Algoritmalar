@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="asus"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-08-03 12:24:21 &#214;S"/>
+        <attribute name="created" value="YXN1cztERVNLVE9QLUVETUszQjg7MjAyNC0wOC0wMzsxMjowMzo1NSDDllM7MjkwOA=="/>
+        <attribute name="edited" value="YXN1cztERVNLVE9QLUVETUszQjg7MjAyNC0wOC0wMzsxMjoyNDoyMSDDllM7MTszMDEy"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="say&#305;, saya&#231;, kalan, adet" type="Integer" array="False" size=""/>
+            <output expression="&quot;Say&#305; giriniz.&quot;" newline="True"/>
+            <input variable="say&#305;"/>
+            <assign variable="saya&#231;" expression="2"/>
+            <assign variable="adet" expression="0"/>
+            <while expression="saya&#231; &lt;= say&#305;">
+                <assign variable="kalan" expression="say&#305;%saya&#231;"/>
+                <if expression="kalan=0">
+                    <then>
+                        <assign variable="adet" expression="adet + 1"/>
+                    </then>
+                    <else/>
+                </if>
+                <assign variable="saya&#231;" expression="saya&#231;+1"/>
+            </while>
+            <if expression="adet=2">
+                <then>
+                    <output expression="&quot;Girilen say&#305; asald&#305;r.&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Girilen say&#305; asal de&#287;ildir.&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

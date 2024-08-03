@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="asus"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-08-03 01:25:38 &#214;S"/>
+        <attribute name="created" value="YXN1cztERVNLVE9QLUVETUszQjg7MjAyNC0wOC0wMzsxMjo1NDowNCDDllM7MjkwOA=="/>
+        <attribute name="edited" value="YXN1cztERVNLVE9QLUVETUszQjg7MjAyNC0wOC0wMzswMToyNTozOCDDllM7MTszMDE5"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="say&#305;, saya&#231;, kalan, tektoplam, &#231;ifttoplam" type="Integer" array="False" size=""/>
+            <output expression="&quot;Bir say&#305; giriniz.&quot;" newline="True"/>
+            <input variable="say&#305;"/>
+            <assign variable="saya&#231;" expression="1"/>
+            <assign variable="&#231;ifttoplam" expression="0"/>
+            <assign variable="tektoplam" expression="0"/>
+            <while expression="say&#305;&gt;=saya&#231;">
+                <assign variable="kalan" expression="saya&#231;%2"/>
+                <if expression="kalan=0">
+                    <then>
+                        <assign variable="&#231;ifttoplam" expression="&#231;ifttoplam + saya&#231;"/>
+                    </then>
+                    <else>
+                        <assign variable="tektoplam" expression="tektoplam + saya&#231;"/>
+                    </else>
+                </if>
+                <assign variable="saya&#231;" expression="saya&#231; + 1"/>
+            </while>
+            <output expression="&quot;Tek say&#305;lar toplam&#305;: &quot; &amp; tektoplam" newline="True"/>
+            <output expression="&quot;&#199;ift say&#305;lar toplam&#305;: &quot; &amp; &#231;ifttoplam" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
