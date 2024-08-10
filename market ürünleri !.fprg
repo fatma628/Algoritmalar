@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="asus"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-08-04 09:56:48 &#214;&#214;"/>
+        <attribute name="created" value="YXN1cztERVNLVE9QLUVETUszQjg7MjAyNC0wOC0wNDswOTowMzowMSDDlsOWOzMwMzc="/>
+        <attribute name="edited" value="YXN1cztERVNLVE9QLUVETUszQjg7MjAyNC0wOC0wNDswOTo1Njo0OCDDlsOWOzI7MzE2NQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="&#252;r&#252;nadet, &#252;r&#252;nfiyat, toplamfiyat, kdvlifiyat" type="Real" array="False" size=""/>
+            <output expression="&quot;Ka&#231; &#252;r&#252;n&#252;n&#252;z oldu&#287;unu giriniz.&quot;" newline="True"/>
+            <assign variable="toplamfiyat" expression="0"/>
+            <input variable="&#252;r&#252;nadet"/>
+            <do expression="&#252;r&#252;nadet&gt;0">
+                <output expression="&quot;&#220;r&#252;n&#252;n fiyat&#305;n&#305; giriniz.&quot;" newline="True"/>
+                <input variable="&#252;r&#252;nfiyat"/>
+                <assign variable="toplamfiyat" expression="&#252;r&#252;nfiyat + toplamfiyat"/>
+                <assign variable="&#252;r&#252;nadet" expression="&#252;r&#252;nadet - 1"/>
+            </do>
+            <assign variable="kdvlifiyat" expression="toplamfiyat * 1.2"/>
+            <output expression="&quot;&#214;demeniz gereken KDV'li toplam tutar: &quot; &amp; kdvlifiyat" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

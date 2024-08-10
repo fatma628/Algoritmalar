@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="asus"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-08-06 07:37:09 &#214;S"/>
+        <attribute name="created" value="YXN1cztERVNLVE9QLUVETUszQjg7MjAyNC0wOC0wNjswNToyMjozNCDDllM7MjkxMQ=="/>
+        <attribute name="edited" value="YXN1cztERVNLVE9QLUVETUszQjg7MjAyNC0wOC0wNjswNzozNzowOSDDllM7MTszMDI5"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="eleman1, eleman2, elemansay&#305;s&#305;, saya&#231;" type="Integer" array="False" size=""/>
+            <output expression="&quot;Dizinin elemansay&#305;s&#305;n&#305; giriniz.&quot;" newline="True"/>
+            <input variable="elemansay&#305;s&#305;"/>
+            <declare name="fibonacci" type="Integer" array="True" size="elemansay&#305;s&#305;"/>
+            <output expression="&quot;Fibonacci[0] gir&quot;" newline="True"/>
+            <assign variable="fibonacci[0]" expression="1"/>
+            <output expression="&quot;Fibonacci[1] gir&quot;" newline="True"/>
+            <assign variable="fibonacci[1]" expression="1"/>
+            <for variable="saya&#231;" start="2" end="elemansay&#305;s&#305;-1" direction="inc" step="1">
+                <assign variable="fibonacci[saya&#231;]" expression="fibonacci[saya&#231;-2] + fibonacci[saya&#231;-1]"/>
+                <output expression="&quot;Fibonacci[saya&#231;]: &quot;&amp; fibonacci[saya&#231;]" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

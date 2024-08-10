@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="asus"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-08-06 08:11:17 &#214;S"/>
+        <attribute name="created" value="YXN1cztERVNLVE9QLUVETUszQjg7MjAyNC0wOC0wNjswNzo0MTozOSDDllM7MjkxOQ=="/>
+        <attribute name="edited" value="YXN1cztERVNLVE9QLUVETUszQjg7MjAyNC0wOC0wNjswODoxMToxNyDDllM7MTszMDIx"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="&#246;ncekide&#287;er, sonrakide&#287;er, elemansay&#305;s&#305;, bulundu&#287;ude&#287;er, saya&#231;" type="Integer" array="False" size=""/>
+            <assign variable="elemansay&#305;s&#305;" expression="20"/>
+            <assign variable="&#246;ncekide&#287;er" expression="1"/>
+            <assign variable="bulundu&#287;ude&#287;er" expression="1"/>
+            <assign variable="sonrakide&#287;er" expression="&#246;ncekide&#287;er + bulundu&#287;ude&#287;er"/>
+            <output expression="&quot;Fibonacci &quot; &amp;&#246;ncekide&#287;er" newline="True"/>
+            <output expression="&quot;Fibonacci &quot; &amp; bulundu&#287;ude&#287;er" newline="True"/>
+            <for variable="saya&#231;" start="3" end="20" direction="inc" step="1">
+                <assign variable="sonrakide&#287;er" expression="&#246;ncekide&#287;er + bulundu&#287;ude&#287;er"/>
+                <output expression="&quot;Sonraki Fibonacci: &quot; &amp;sonrakide&#287;er" newline="True"/>
+                <assign variable="&#246;ncekide&#287;er" expression="bulundu&#287;ude&#287;er"/>
+                <assign variable="bulundu&#287;ude&#287;er" expression="sonrakide&#287;er"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="asus"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-08-06 07:41:36 &#214;S"/>
+        <attribute name="created" value="YXN1cztERVNLVE9QLUVETUszQjg7MjAyNC0wOC0wNjswNzozNzoxNyDDllM7MjkyMA=="/>
+        <attribute name="edited" value="YXN1cztERVNLVE9QLUVETUszQjg7MjAyNC0wOC0wNjswNzo0MTozNiDDllM7MTszMDI0"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="say&#305;lar" type="Integer" array="True" size="10"/>
+            <declare name="enb&#252;y&#252;k, enk&#252;&#231;&#252;k, saya&#231;" type="Integer" array="False" size=""/>
+            <assign variable="enb&#252;y&#252;k" expression="0"/>
+            <assign variable="enk&#252;&#231;&#252;k" expression="0"/>
+            <for variable="saya&#231;" start="0" end="9" direction="inc" step="1">
+                <assign variable="say&#305;lar[saya&#231;]" expression="random(50)+1"/>
+            </for>
+            <for variable="saya&#231;" start="0" end="9" direction="inc" step="1">
+                <if expression="say&#305;lar[saya&#231;]&gt;enb&#252;y&#252;k">
+                    <then>
+                        <assign variable="enb&#252;y&#252;k" expression="say&#305;lar[saya&#231;]"/>
+                    </then>
+                    <else/>
+                </if>
+            </for>
+            <assign variable="enk&#252;&#231;&#252;k" expression="say&#305;lar[0]"/>
+        </body>
+    </function>
+</flowgorithm>

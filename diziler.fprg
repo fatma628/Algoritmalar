@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="asus"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-08-04 12:52:59 &#214;S"/>
+        <attribute name="created" value="YXN1cztERVNLVE9QLUVETUszQjg7MjAyNC0wOC0wNDsxMjozNjowMyDDllM7MjkwOA=="/>
+        <attribute name="edited" value="YXN1cztERVNLVE9QLUVETUszQjg7MjAyNC0wOC0wNDsxMjo1Mjo1OSDDllM7MTszMDI1"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="g&#252;nler" type="String" array="True" size="7"/>
+            <declare name="saya&#231;" type="Integer" array="False" size=""/>
+            <declare name="say&#305;lar" type="Integer" array="True" size="elemansay&#305;s&#305;"/>
+            <assign variable="g&#252;nler[0]" expression="&quot;pazartesi&quot;"/>
+            <assign variable="g&#252;nler[1]" expression="&quot;sal&#305;&quot;"/>
+            <assign variable="g&#252;nler[2]" expression="&quot;&#231;ar&#351;amba&quot;"/>
+            <assign variable="g&#252;nler[3]" expression="&quot;per&#351;embe&quot;"/>
+            <assign variable="g&#252;nler[4]" expression="&quot;cuma&quot;"/>
+            <assign variable="g&#252;nler[5]" expression="&quot;cumartesi&quot;"/>
+            <assign variable="g&#252;nler[6]" expression="&quot;pazar&quot;"/>
+            <for variable="saya&#231;" start="0" end="6" direction="inc" step="1">
+                <output expression="g&#252;nler[saya&#231;]" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

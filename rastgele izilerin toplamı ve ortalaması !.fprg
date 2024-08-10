@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="asus"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-08-04 01:13:11 &#214;S"/>
+        <attribute name="created" value="YXN1cztERVNLVE9QLUVETUszQjg7MjAyNC0wOC0wNDsxMjo1MzowMiDDllM7MjkwNg=="/>
+        <attribute name="edited" value="YXN1cztERVNLVE9QLUVETUszQjg7MjAyNC0wOC0wNDswMToxMzoxMSDDllM7MTszMDA4"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="elemansay&#305;s&#305;, saya&#231;, elemanlar&#305;ntoplam&#305;, elemanlar&#305;nortalamas&#305;" type="Real" array="False" size=""/>
+            <output expression="&quot;Dizinin eleman say&#305;s&#305;&quot;" newline="True"/>
+            <input variable="elemansay&#305;s&#305;"/>
+            <assign variable="saya&#231;" expression="0"/>
+            <assign variable="elemanlar&#305;ntoplam&#305;" expression="0"/>
+            <declare name="say&#305;lar" type="Integer" array="True" size="elemansay&#305;s&#305;"/>
+            <for variable="saya&#231;" start="0" end="elemansay&#305;s&#305;-1" direction="inc" step="1">
+                <assign variable="say&#305;lar [saya&#231;]" expression="random (100)+1"/>
+                <assign variable="elemanlar&#305;ntoplam&#305;" expression="say&#305;lar[saya&#231;] + elemanlar&#305;ntoplam&#305;"/>
+            </for>
+            <assign variable="elemanlar&#305;nortalamas&#305;" expression="elemanlar&#305;ntoplam&#305;/elemansay&#305;s&#305;"/>
+            <output expression="&quot;Elemanlar&#305;n Toplamlar&#305;: &quot; &amp;elemanlar&#305;ntoplam&#305;" newline="True"/>
+            <output expression="&quot;Elemanlar&#305;n Ortalamalar&#305;: &quot; &amp;elemanlar&#305;nortalamas&#305;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

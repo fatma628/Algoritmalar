@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="asus"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-08-04 11:55:41 &#214;&#214;"/>
+        <attribute name="created" value="YXN1cztERVNLVE9QLUVETUszQjg7MjAyNC0wOC0wNDsxMTo0OToxOCDDlsOWOzMwNDg="/>
+        <attribute name="edited" value="YXN1cztERVNLVE9QLUVETUszQjg7MjAyNC0wOC0wNDsxMTo1NTo0MSDDlsOWOzE7MzE0OQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="say&#305;, fakt&#246;riyel, saya&#231;" type="Real" array="False" size=""/>
+            <assign variable="fakt&#246;riyel" expression="1"/>
+            <output expression="&quot;Say&#305; giriniz.&quot;" newline="True"/>
+            <input variable="say&#305;"/>
+            <for variable="saya&#231;" start="say&#305;" end="1" direction="dec" step="1">
+                <assign variable="fakt&#246;riyel" expression="fakt&#246;riyel*saya&#231;"/>
+            </for>
+            <output expression="&quot;Girilen: &quot; &amp;say&#305;&amp; &quot; fakt&#246;riyeli: &quot; &amp;fakt&#246;riyel" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="asus"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-08-04 11:41:56 &#214;&#214;"/>
+        <attribute name="created" value="YXN1cztERVNLVE9QLUVETUszQjg7MjAyNC0wOC0wNDsxMDo0OTozMSDDlsOWOzMwNDI="/>
+        <attribute name="edited" value="YXN1cztERVNLVE9QLUVETUszQjg7MjAyNC0wOC0wNDsxMTo0MTo1NiDDlsOWOzE7MzE1MA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="tahminedilensay&#305;, say&#305;, saya&#231;" type="Integer" array="False" size=""/>
+            <declare name="devamm&#305;" type="String" array="False" size=""/>
+            <output expression="&quot;Tahmininizi giriniz.Do&#287;ru say&#305;y&#305; bilmek i&#231;in be&#351; hakk&#305;n&#305;z var.&quot;" newline="True"/>
+            <do expression="devamm&#305;=&quot;E&quot;|| devamm&#305;=&quot;e&quot;">
+                <assign variable="saya&#231;" expression="5"/>
+                <assign variable="say&#305;" expression="random(50)+1"/>
+                <do expression="saya&#231; &gt; 0">
+                    <output expression="&quot;Kalan hakk&#305;n&#305;z:&quot; &amp;saya&#231;" newline="True"/>
+                    <input variable="tahminedilensay&#305;"/>
+                    <if expression="tahminedilensay&#305;=say&#305;">
+                        <then>
+                            <output expression="&quot;Tebrikler &quot; &amp;(6-saya&#231;) &amp; &quot;. denemede do&#287;ru bildiniz.&quot;" newline="True"/>
+                            <assign variable="saya&#231;" expression="0"/>
+                        </then>
+                        <else>
+                            <if expression="tahminedilensay&#305;&lt;say&#305;">
+                                <then>
+                                    <output expression="&quot;Daha b&#252;y&#252;k bir say&#305; giriniz.&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <output expression="&quot;Daha k&#252;&#231;&#252;k bir say&#305; giriniz.&quot;" newline="True"/>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                    <assign variable="saya&#231;" expression="saya&#231; - 1"/>
+                </do>
+                <output expression="&quot;Devam etmek istiyor musunuz? [E/H]&quot;" newline="True"/>
+                <input variable="devamm&#305;"/>
+            </do>
+        </body>
+    </function>
+</flowgorithm>

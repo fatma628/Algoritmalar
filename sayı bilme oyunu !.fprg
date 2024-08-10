@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="asus"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-08-04 10:49:17 &#214;&#214;"/>
+        <attribute name="created" value="YXN1cztERVNLVE9QLUVETUszQjg7MjAyNC0wOC0wNDsxMDo0NDowOCDDlsOWOzMwNDE="/>
+        <attribute name="edited" value="YXN1cztERVNLVE9QLUVETUszQjg7MjAyNC0wOC0wNDsxMDo0OToxNyDDlsOWOzE7MzE1NA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="say&#305;, tahminedilensay&#305;" type="Integer" array="False" size=""/>
+            <assign variable="say&#305;" expression="random(10)+1"/>
+            <do expression="tahminedilensay&#305;!=say&#305;">
+                <output expression="&quot;Say&#305;y&#305; tahmin et.&quot;" newline="True"/>
+                <input variable="tahminedilensay&#305;"/>
+            </do>
+            <output expression="&quot;Do&#287;ru bildiniz.&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
